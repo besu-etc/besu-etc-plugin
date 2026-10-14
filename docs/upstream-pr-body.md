@@ -177,7 +177,7 @@ refused on a Clique builder.
 
 ### Who uses it
 
-The first consumer is [besu-etc-plugin](https://github.com/diega/besu-etc-plugin), which runs a
+The first consumer is [besu-etc-plugin](https://github.com/besu-etc/besu-etc-plugin), which runs a
 chain Besu no longer ships. I maintain it, and it is migrated to the contract in this PR: it
 declares ETC's twelve fork boundaries as modifications and lets Besu derive the fork ID from them,
 pinned in its own tests against core-geth's fork ID vectors. It takes its network naming from a Besu

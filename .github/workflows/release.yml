@@ -66,7 +66,7 @@ jobs:
       - name: Checkout Besu fork
         uses: actions/checkout@v4
         with:
-          repository: diega/besu
+          repository: besu-etc/besu
           ref: ${{ matrix.besu_branch }}
           path: besu
 
