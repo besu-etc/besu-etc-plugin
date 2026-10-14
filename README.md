@@ -32,8 +32,8 @@ The genesis is the one piece a profile cannot carry, and `dist/bin/besu-etc` sup
 This plugin needs a Besu that carries the protocol-schedule customization extension point
 (`ProtocolScheduleService`, `ProtocolScheduleCustomizer`) and the generic genesis accessor the
 customizer reads its chain's keys through (`getCustomConfigLong`). Both are proposed upstream from
-[diega/besu](https://github.com/diega/besu), and
-[`etc-integration`](https://github.com/diega/besu/tree/etc-integration) is the branch carrying
+[besu-etc/besu](https://github.com/besu-etc/besu), and
+[`etc-integration`](https://github.com/besu-etc/besu/tree/etc-integration) is the branch carrying
 whatever those proposals currently amount to. Build against that.
 
 That branch is recut whenever the proposals move or upstream does, so what it stacks is deliberately
@@ -45,7 +45,7 @@ not listed here: read it from the branch.
 
 1. Clone the Besu fork next to this repository:
    ```bash
-   git clone -b etc-integration https://github.com/diega/besu.git ../besu
+   git clone -b etc-integration https://github.com/besu-etc/besu.git ../besu
    ```
 
 2. Create `local.properties`:
